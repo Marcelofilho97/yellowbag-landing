@@ -20,7 +20,7 @@ Essa é a **landing page oficial da YellowBag**, desenvolvida com 💛 criativid
 
 ## 📌 Acesse agora:
 
-🔗 [**Clique para visitar a Landing Page**]([https://seu-usuario.github.io/yellowbag-landing/](https://marcelofilho97.github.io/yellowbag-landing/))
+🔗 [**Clique para visitar a Landing Page**](https://marcelofilho97.github.io/yellowbag-landing/)
 
 ---
 
