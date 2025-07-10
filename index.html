@@ -15,14 +15,13 @@
   <title>YellowBag</title>
   <script src="https://kit.fontawesome.com/0a0ee6e60a.js" crossorigin="anonymous"></script>
   <link rel="icon" type="image/png" href="./image/yellowbag-logo.png">
-  <link rel='stylesheet' type='text/css' media='screen' href='./style.css'>
-  <script src="./script.js" defer></script>
+  <link rel='stylesheet' type='text/css' media='screen' href='./styles/main.css'>
 </head>
 
 <body>
   <header class="header-conteudo">
     <div class="header-options">
-      <a href="" class="header-logo">
+      <a href="/" class="header-logo">
         <img src="./image/yellowbag-logo.png" alt="Logo YellowBag">
       </a>
 
@@ -32,7 +31,6 @@
 
       <nav class="header-navbar" id="navbar">
         <ul>
-          <li class="header-item"><a href="#hero"><i class="fa-solid fa-mask"></i> Hero</a></li>
           <li class="header-item"><a href="#sobre"><i class="fa-solid fa-eject"></i> Sobre</a></li>
           <li class="header-item"><a href="#jornadas"><i class="fa-solid fa-pencil"></i> Jornadas</a></li>
           <li class="header-item"><a href="#campanha"><i class="fa-solid fa-heart"></i> Campanha</a></li>
@@ -140,39 +138,41 @@
   </section>
 
   <section class="campanha" id="campanha">
-  <div class="campanha-container">
-    <h2 class="campanha-titulo">
-      Quer viver uma amostra dessa aventura criativa?
-    </h2>
+    <div class="campanha-container">
+      <h2 class="campanha-titulo">
+        Uma Missão Especial nas Férias!
+      </h2>
 
-    <p class="campanha-subtitle">
-      Com apenas R$1, você já faz parte dessa mudança!
-    </p>
+      <p class="campanha-subtitle">
+        A YellowBag se juntou à Usipaz Icuí para uma jornada inesquecível durante a colônia de férias!
+      </p>
 
-    <p class="campanha-texto">
-      Estamos em uma missão urgente: <br />
-      <strong>Arrecadar R$30.000 até o dia 28 de julho</strong> para oferecer, de forma <strong>100% gratuita</strong>, a nossa Jornada de Lançamento da YellowBag para <strong>300 crianças da Região Norte</strong>.
-    </p>
+      <p class="campanha-texto">
+        As crianças exploradoras <strong>soltaram a imaginação</strong>, <strong>colocaram a mão na massa</strong> e
+        <strong>mostraram que aprender pode (e deve!) ser divertido</strong>.
+      </p>
 
-    <p class="campanha-texto">
-      Cada real doado nos aproxima desse objetivo.<br />
-      Com R$1, você ajuda a levar <strong>educação tecnológica</strong>, <strong>criatividade</strong> e <strong>oportunidades reais</strong> para crianças que sonham com um futuro melhor.
-    </p>
+      <p class="campanha-texto">
+        Foram dias de <strong>muita brincadeira, criação e descobertas</strong>, onde nossas mochilas se encheram de
+        <strong>experiências que transformam!</strong>
+      </p>
 
-    <p class="campanha-texto">
-      Contribua com qualquer valor — <strong>até R$1 já faz a diferença!</strong><br />
-      Compartilhe esta causa com sua rede.
-    </p>
+      <h3>Quer ver um pedacinho dessa aventura?</h3>
 
-    <p class="campanha-texto">
-      Apoie um projeto que constrói um futuro mais inclusivo, criativo e transformador para nossas crianças.
-    </p>
+      <div class="carrossel">
+        <img id="imagem-carrossel" src="" alt="Imagem do carrossel" />
+        <button class="carrossel-btn prev">&#10094;</button>
+        <button class="carrossel-btn next">&#10095;</button>
+      </div>
 
-    <a href="https://seulink.com/doar" target="_blank" class="cta-button">
-      Contribuir Agora
-    </a>
-  </div>
-</section>
+      <h3 class="campanha-titulo">E você? gostaria de se juntar a nossa jornada?</h3>
+      <p class="campanha-subtitle">Responda ao formulário abaixo e entre para um mundo de criatividade e diversão</p>
+
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLSdf67zUYyn2AKbsm1y9moytVB75LH_SCtursl0Kf6ZCai5IwA/viewform?pl1=1"
+        width="800" height="1200" frameborder="0" marginheight="0" marginwidth="0" style="max-width: 100%;">Carregando…</iframe>
+    </div>
+  </section>
 
 
   <section class="contato" id="contato">
@@ -228,19 +228,11 @@
   </section>
   <footer class="footer">
     <div class="footer-container">
-      <blockquote class="footer-slogan">
-        <span id="slogan-text"></span><span class="cursor">|</span>
-      </blockquote>
-      <div class="footer-playlist">
-        <p><strong>A música incentiva a criatividade!</strong> Ouça a trilha sonora da YellowBag:</p>
-        <iframe style="border-radius:12px"
-          src="https://open.spotify.com/embed/playlist/7uym5hUPawxrNs0EGzxeaS?utm_source=generator" frameBorder="0"
-          allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
-          loading="lazy"></iframe>
-      </div>
       <p class="footer-copy">© 2025 YellowBag • Todos os direitos reservados.</p>
     </div>
   </footer>
 </body>
+
+<script src="./js/script.js" defer></script>
 
 </html>

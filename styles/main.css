@@ -5,38 +5,34 @@
   --white: #fff;
 }
 
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   min-width: 0;
 }
 
-html{
-   scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-body{
+body {
   font-family: "Poppins", sans-serif;
 }
 
 /* HEADER */
 
-.header-conteudo{
-  position: fixed;
-  top: 0;
-  left: 0;
+.header-conteudo {
   width: 100%;
   background: linear-gradient(90deg, #0c3659, #0a273d);
-  z-index: 1000;
   padding: 0 2rem;
 }
 
-.header-conteudo a{
+.header-conteudo a {
   text-decoration: none;
 }
 
-.header-options{
+.header-options {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -45,9 +41,8 @@ body{
   gap: 4rem;
 }
 
-.header-logo img{
+.header-logo img {
   height: 75px;
-  transition: transform 0.3s ease;
 }
 
 .hamburguer {
@@ -63,6 +58,8 @@ body{
   display: flex;
   gap: 2rem;
   list-style: none;
+  list-style: none;
+  gap: 32px;
   margin: 0;
   padding: 0;
 }
@@ -75,15 +72,7 @@ body{
   text-decoration: none;
 }
 
-.header-navbar ul{
-  display: flex;
-  list-style: none;
-  gap: 32px;
-  margin: 0;
-  padding: 0;
-}
-
-.header-item{
+.header-item {
   text-decoration: none;
   color: var(--yellow);
   font-weight: 600;
@@ -91,7 +80,7 @@ body{
   transition: color 0.2s ease, box-shadow 0.2s ease;
 }
 
-.header-item a{ 
+.header-item a {
   text-decoration: none;
   color: var(--yellow);
   font-weight: 600;
@@ -105,7 +94,7 @@ body{
 
 /* Seções - HERO */
 .hero {
-  background: url(./image/wallpaper.png);
+  background: url(../image/wallpaper.png);
   background-position: center;
   padding: 120px 32px 80px;
   text-align: center;
@@ -202,7 +191,7 @@ body{
   justify-content: space-around;
   gap: 32px;
   margin-top: 64px;
-  background: url(./image/wallpaper-2.png);
+  background: url(../image/wallpaper-2.png);
   background-position: center;
   color: var(--yellow);
   padding: 40px 24px;
@@ -335,7 +324,8 @@ body{
   color: var(--blue);
 }
 
-.campanha-subtitle {
+.campanha-subtitle,
+.campanha-container h3 {
   color: var(--blue);
   font-weight: 700;
   margin: 2rem 0;
@@ -357,8 +347,52 @@ body{
   transform: scale(1.02);
 }
 
+.carrossel {
+  position: relative;
+  width: 800px;
+  max-width: 100%;
+  height: 600px;
+  min-height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  background-color: var(--white);
+}
+
+#imagem-carrossel {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.carrossel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: var(--white);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carrossel-btn.prev {
+  left: 10px;
+}
+
+.carrossel-btn.next {
+  right: 10px;
+}
+
+.carrossel-btn:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
 .contato {
-  background: url(./image/contact.png);
+  background: url(../image/contact.png);
   background-position: center;
   padding: 80px 24px;
   text-align: center;
@@ -428,7 +462,7 @@ body{
 }
 
 .footer-slogan {
-  font-size: 1.1rem; 
+  font-size: 1.1rem;
   font-family: 'Special Elite', monospace;
   font-style: italic;
   margin-bottom: 30px;
@@ -504,7 +538,7 @@ body{
     padding: 0.5rem 1rem;
   }
 
-    .hero {
+  .hero {
     padding: 100px 16px 60px;
   }
 
@@ -528,7 +562,7 @@ body{
     text-align: center;
   }
 
-  .sobre-img{
+  .sobre-img {
     display: none;
   }
 
@@ -553,7 +587,7 @@ body{
     height: 140px;
   }
 
-    .jornadas-titulo {
+  .jornadas-titulo {
     font-size: 1.8rem;
   }
 
@@ -586,9 +620,9 @@ body{
   .footer-slogan {
     font-size: 1.2rem;
     padding: 0 1rem;
-    white-space: normal;         
-    word-break: break-word;     
-    border-right: none;          
+    white-space: normal;
+    word-break: break-word;
+    border-right: none;
     animation: fadeIn 2s ease-in-out forwards;
   }
 
@@ -597,7 +631,12 @@ body{
   }
 
   @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 1; }
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
   }
 }

@@ -1,0 +1,256 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+
+  /*Variáveis CSS*/
+  --hue: 50;
+  --color-base-gray-100: hsl(0, 0%, 96%);
+  --blue: #0c3659;
+  --light-yellow: #fff6d0;
+  --yellow: #f2b90c;
+  --white: #fff;
+
+  /* Fontes */
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+}
+
+html{
+   scroll-behavior: smooth;
+}
+
+html, body, input {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: var(--blue);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-weight: 700;
+  padding: 0 2rem;
+}
+
+.header-container img {
+  height: 75px;
+}
+
+.input-wrapper label {
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+}
+
+.input-wrapper input {
+  background-color: var(--color-base-gray-100);
+  border: 0;
+  border-radius: .6rem;
+  font-weight: 600;
+  padding: 1rem;
+}
+
+.input-wrapper input::placeholder{
+  opacity: 0.56;
+  color: var(--blue);
+}
+
+.header-navbar ul {
+  display: flex;
+  gap: 2rem;
+  list-style: none;
+  list-style: none;
+  gap: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+.header-item a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--white);
+  text-decoration: none;
+}
+
+.header-item{
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-item a{ 
+  text-decoration: none;
+  color: var(--yellow);
+  font-weight: 600;
+  font-size: 1rem;
+  transition: color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.header-item:hover {
+  filter: brightness(90%);
+}
+
+main {
+  background-color: var(--yellow);
+}
+
+.container {
+  background: url(../image/menino-instruindo.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container h2 {
+  padding-top: 1.6rem;
+  color: var(--white);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  text-align: center;
+  margin-top: 80px;
+}
+
+.container p{
+  color: var(--white);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 1rem;
+  text-align: center;
+}
+
+.container a {
+  background-color: var(--yellow);
+  color: var(--blue);
+  padding: 1rem 2rem;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 1rem;
+  border: none;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  margin-top: 20px;
+  text-decoration: none;
+}
+
+.container button:hover {
+  filter: brightness(90%);
+}
+
+.container-projects {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+}
+
+.container-projects h2 {
+  color: var(--white);
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7);
+  font-size: 3rem;
+  text-align: center;
+}
+
+.gallery {
+  margin-top: 3.2rem;
+  gap: 2.2rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.item {
+  background-color: var(--white);
+  border-radius: .8rem;
+  width: 300px;
+  max-width: 100%;
+}
+
+.item-description {
+  padding: 0 10px 10px;
+}
+
+.item-description h3, .item-description p {
+  color: var(--blue);
+}
+
+.item img {
+  width: 100%;
+  aspect-ratio: 16/8;
+  object-fit: cover;
+  transition: all 200ms ease-out;
+
+  display: block;
+}
+
+.item img:hover {
+  filter: hue-rotate(7deg) contrast(101%) saturate(200%);
+  transform: scale(1.1);
+}
+
+
+.footer {
+  background: linear-gradient(to top, #0c3659, #041e31);
+  padding: 60px 24px 30px;
+  text-align: center;
+  font-family: 'Courier New', monospace;
+}
+
+.footer-container {
+  max-width: 900px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.footer-copy {
+  margin-top: 30px;
+  color: var(--white);
+}
+
+
+@keyframes move {
+  from {
+    transform: translateY(var(--startY));
+  }
+}
+
+.item {
+  --delay: .4s;
+  animation: appear .4s var(--delay) backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container{
+    padding: 0;
+    justify-content: center;
+  }
+}
