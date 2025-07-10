@@ -39,6 +39,7 @@ body {
   max-width: 1200px;
   margin: auto;
   gap: 4rem;
+  position: relative;
 }
 
 .header-logo img {
@@ -521,6 +522,7 @@ body {
     right: 0;
     width: 100%;
     background-color: var(--blue);
+    z-index: 999;
   }
 
   .header-navbar.active {
